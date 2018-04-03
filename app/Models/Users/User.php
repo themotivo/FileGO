@@ -31,4 +31,14 @@ class User extends Authenticatable
         'password',
         'remember_token'
     ];
+
+    /**
+     * User have many Files.
+     *
+     * @var return
+     */
+    public function files()
+    {
+        return $this->hasMany('App\Models\Users\File');
+    }
 }
