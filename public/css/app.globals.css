@@ -1,0 +1,100 @@
+/*!
+ * FileGO
+ * DEVELOPED BY MOTIVO GROUP LTD (UK).
+ * CODE LICENSED UNDER THE APACHE LICENSE V2.0.
+ * FOR DETAILS, SEE http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+
+/* Import Font Awesome icons
+=================================================================== */
+@import url("//use.fontawesome.com/releases/v5.0.6/css/all.css");
+
+/* Default Application Global Styles
+=================================================================== */
+html, body {
+
+    height: 100%;
+    color: #212121;
+    font-size: 1em;
+    font-weight: 400;
+    min-height: 100%;
+    letter-spacing: 0.03em;
+    line-height: 1.55714286em;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Open Sans', sans-serif;
+}
+
+*, :after, :before {
+
+    box-sizing: border-box;
+}
+
+button,
+select,
+textarea,
+input {
+
+    outline: 0;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+textarea:focus,
+button:focus,
+select:focus,
+input:focus {
+
+    outline: 0;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+.hide-element {
+
+    display: none;
+}
+
+.text-capitalize {
+
+    text-transform: capitalize;
+}
+
+.text-lowercase {
+
+    text-transform: lowercase;
+}
+
+.text-uppercase {
+
+    text-transform: uppercase;
+}
+
+.btn {
+
+    cursor: pointer;
+    transition: .5s;
+}
+
+.btn:focus {
+
+    outline: 0;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers)
+=================================================================== */
+@media only screen and (max-width: 479px) {
+
+
+}
+
+/* Tablet Portrait Size to Tablet Landscape Size (devices and browsers)
+=================================================================== */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+
+}

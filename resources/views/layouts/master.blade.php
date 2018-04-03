@@ -20,10 +20,6 @@
             window.Motivo = {!! json_encode(['csrfToken' => csrf_token(),]) !!};
         </script>
 
-        <script src="{{ asset('vendor/jQuery/3.2.1/jquery-3.2.1.min.js') }}"></script>
-        <script src="{{ asset('vendor/Ajax/libs/Popper/1.11.0/popper.min.js') }}"></script>
-        <script src="{{ asset('vendor/twitter/bootstrap/v4.0.0/js/bootstrap.min.js') }}"></script>
-
         @yield('head_scripts')
 
     </head>
@@ -31,6 +27,10 @@
     <body>
 
     @yield('content')
+
+    <script src="{{ asset('vendor/jQuery/3.2.1/jquery-3.2.1.min.js') }}"></script>
+    <script src="{{ asset('vendor/Ajax/libs/Popper/1.11.0/popper.min.js') }}"></script>
+    <script src="{{ asset('vendor/twitter/bootstrap/v4.0.0/js/bootstrap.min.js') }}"></script>
 
     @yield('body_scripts')
 
