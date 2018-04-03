@@ -71,12 +71,11 @@
                     @auth
                         <a href="{{ url('/home') }}">Home</a>
                     @else
-                        <a href="{{ route('login') }}">Logar</a>
+                        <a href="{{ route('login') }}">Nao podes</a>
                         <a href="{{ route('register') }}">Register</a>
                     @endauth
                 </div>
             @endif
-
 
             <div class="content">
                 <div class="title m-b-md">
