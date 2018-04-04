@@ -4,6 +4,8 @@
 
 @section('head_styles')
     <link rel="stylesheet" href="{{ asset('vendor/dropzone/dropzone.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('vendor/DataTables/datatables.min.css') }}"/>
+    <link rel="stylesheet" type="text/css" href="{{ asset('vendor/DataTables/DataTables-1.10.16/css/dataTables.bootstrap4.min.css') }}"/>
 @endsection
 
 @section('head_scripts')
@@ -16,7 +18,27 @@
         <div class="container">
             <div class="row inner-container">
                 <div class="col-lg-8">
-
+                    <table id="example" class="table table-striped table-bordered" style="width:100%">
+                        <thead>
+                        <tr>
+                            <th>File name</th>
+                            <th>Download Url</th>
+                            <th>Actions</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><i class="far fa-file-alt"></i> Document PDF</td>
+                                <td>filego.test/f/Usja3a</td>
+                                <td>none</td>
+                            </tr>
+                            <tr>
+                                <td><i class="far fa-file-alt"></i> Blyet Pics</td>
+                                <td>filego.test/f/Usja3a</td>
+                                <td>none</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
                 <div class="col-lg-4">
 
@@ -61,6 +83,8 @@
 @endsection
 
 @section('body_scripts')
+    <script type="text/javascript" src="{{ asset('vendor/DataTables/datatables.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('vendor/DataTables/DataTables-1.10.16/js/dataTables.bootstrap4.min.js') }}"></script>
     <script src="{{ asset('vendor/dropzone/dropzone.js') }}"></script>
     <script>
         Dropzone.options.uploadFileForm = {
@@ -78,5 +102,8 @@
                 });
             }
         };
+        $(document).ready(function() {
+            $('#example').DataTable();
+        } );
     </script>
 @endsection
