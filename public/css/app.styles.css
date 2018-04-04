@@ -5,7 +5,18 @@
  * FOR DETAILS, SEE http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+section.auth {
 
+    height: 100%;
+    background-color: #FAFAFA;
+}
+
+section.auth form {
+
+    padding: 20px 20px;
+    border: 1px solid #EEEEEE;
+    background-color: #FFFFFF;
+}
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers)
 =================================================================== */

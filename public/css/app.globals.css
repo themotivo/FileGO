@@ -47,9 +47,9 @@ button:focus,
 select:focus,
 input:focus {
 
-    outline: 0;
-    box-shadow: none;
-    -webkit-box-shadow: none;
+    outline: 0 !important;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
 }
 
 .hide-element {
