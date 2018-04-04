@@ -20,6 +20,20 @@ section.auth form {
     background-color: #FFFFFF;
 }
 
+section.home .inner-container {
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+section.home form.dropzone {
+
+    border: 0;
+    outline-offset: -10px;
+    background-color: #EEEEEE;
+    outline: 2px dashed #BDBDBD;
+}
+
 /* Application Navigation
 =================================================================== */
 
