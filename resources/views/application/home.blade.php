@@ -46,7 +46,7 @@
 
                             <div class="form-group row">
                                 <div class="col-md-12">
-                                    <button type="button" class="btn btn-primary"><i class="fas fa-upload"></i> Upload</button>
+                                    <button type="button" class="btn btn-primary btn-block"><i class="fas fa-upload"></i> Upload</button>
                                 </div>
                             </div>
 
@@ -64,14 +64,17 @@
     <script src="{{ asset('vendor/dropzone/dropzone.js') }}"></script>
     <script>
         Dropzone.options.uploadFileForm = {
+
             maxFiles: 1,
             accept: function(file, done) {
+
                 console.log("uploaded");
                 done();
             },
             init: function() {
                 this.on("maxfilesexceeded", function(file){
-                    alert("No more files please!");
+
+                    alert("No more files please! " + file);
                 });
             }
         };
