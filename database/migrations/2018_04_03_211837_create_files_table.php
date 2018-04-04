@@ -17,6 +17,10 @@ class CreateFilesTable extends Migration
 
             $table->increments('id');
             $table->string('user_id');
+            $table->string('folder_id');
+            $table->string('name');
+            $table->string('slug');
+            $table->string('path');
             $table->timestamps();
         });
     }

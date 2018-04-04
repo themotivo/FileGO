@@ -30,8 +30,13 @@ section.home form.dropzone {
 
     border: 0;
     outline-offset: -10px;
-    background-color: #EEEEEE;
-    outline: 2px dashed #BDBDBD;
+    background-color: #F5F5F5;
+    outline: 2px dashed #E0E0E0;
+}
+
+section.home .card .form-group:last-child {
+
+    margin-bottom: 0;
 }
 
 /* Application Navigation

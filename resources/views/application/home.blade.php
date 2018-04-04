@@ -15,15 +15,15 @@
     <section class="home">
         <div class="container">
             <div class="row inner-container">
-                <div class="col-lg-6">
+                <div class="col-lg-8">
 
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-4">
 
                     <div class="card">
 
                         <div class="card-header">
-                            Quick Upload
+                            <i class="fas fa-file"></i> Quick Upload
                         </div>
 
                         <div class="card-body">
@@ -36,7 +36,7 @@
 
                             <div class="form-group row">
                                 <div class="col-md-12">
-                                    <form action="{{ url('test') }}" method="POST" CLASS="dropzone" enctype="multipart/form-data">
+                                    <form id="uploadFileForm" action="{{ url('test') }}" method="POST" CLASS="dropzone" enctype="multipart/form-data">
                                         <div class="fallback">
                                             <input name="file" type="file" multiple />
                                         </div>
@@ -46,7 +46,7 @@
 
                             <div class="form-group row">
                                 <div class="col-md-12">
-                                    <button type="button" class="btn btn-primary">Upload</button>
+                                    <button type="button" class="btn btn-primary"><i class="fas fa-upload"></i> Upload</button>
                                 </div>
                             </div>
 
@@ -62,4 +62,18 @@
 
 @section('body_scripts')
     <script src="{{ asset('vendor/dropzone/dropzone.js') }}"></script>
+    <script>
+        Dropzone.options.uploadFileForm = {
+            maxFiles: 1,
+            accept: function(file, done) {
+                console.log("uploaded");
+                done();
+            },
+            init: function() {
+                this.on("maxfilesexceeded", function(file){
+                    alert("No more files please!");
+                });
+            }
+        };
+    </script>
 @endsection
