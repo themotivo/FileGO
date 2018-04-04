@@ -18,4 +18,4 @@ Route::post('password/reset',           'Auth\ResetPasswordController@reset');
 | Application Routes
 |--------------------------------------------------------------------------
 */
-Route::get('/home',                     'HomeController@index')->name('home');
+Route::get('/home',                     'Application\HomeController@index')->name('home');

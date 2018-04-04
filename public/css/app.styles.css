@@ -5,6 +5,8 @@
  * FOR DETAILS, SEE http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+/* Authentication Form
+=================================================================== */
 section.auth {
 
     height: 100%;
@@ -17,6 +19,10 @@ section.auth form {
     border: 1px solid #E0E0E0;
     background-color: #FFFFFF;
 }
+
+/* Application Navigation
+=================================================================== */
+
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers)
 =================================================================== */
