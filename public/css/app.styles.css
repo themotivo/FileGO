@@ -8,13 +8,13 @@
 section.auth {
 
     height: 100%;
-    background-color: #FAFAFA;
+    background-color: #F5F5F5;
 }
 
 section.auth form {
 
     padding: 20px 20px;
-    border: 1px solid #EEEEEE;
+    border: 1px solid #E0E0E0;
     background-color: #FFFFFF;
 }
 

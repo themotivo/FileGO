@@ -14,10 +14,13 @@
     <section class="auth">
         <div class="container h-100">
             <div class="row h-100 justify-content-center align-items-center">
-                <div class="col-md-4">
+                <div class="col-md-5">
+
                     <form method="POST" action="{{ route('login') }}">
 
                         @csrf
+
+                        <h2>{{ env('APP_NAME') }}</h2>
 
                         <div class="form-group row">
                             <div class="col-md-12">
