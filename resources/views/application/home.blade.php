@@ -28,14 +28,26 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td><i class="far fa-file-alt"></i> Document PDF</td>
-                                <td>filego.test/f/Usja3a</td>
-                                <td>none</td>
+                                <td><i class="far fa-file"></i> Document PDF</td>
+                                <td>
+                                    <input class="form-control form-control-sm" type="text" placeholder="Default input" value="filego.test/f/Usja3a" readonly>
+                                </td>
+                                <td class="text-center">
+                                    <a class="btn btn-primary btn-sm" href="#" role="button"><i class="far fa-copy"></i></a>
+                                    <a class="btn btn-info btn-sm" href="#" role="button"><i class="far fa-edit"></i></a>
+                                    <a class="btn btn-danger btn-sm" href="#" role="button"><i class="far fa-trash-alt"></i></a>
+                                </td>
                             </tr>
                             <tr>
-                                <td><i class="far fa-file-alt"></i> Blyet Pics</td>
-                                <td>filego.test/f/Usja3a</td>
-                                <td>none</td>
+                                <td><i class="far fa-file"></i> Work study</td>
+                                <td>
+                                    <input class="form-control form-control-sm" type="text" placeholder="Default input" value="filego.test/f/54DsW1" readonly>
+                                </td>
+                                <td class="text-center">
+                                    <a class="btn btn-primary btn-sm" href="#" role="button"><i class="far fa-copy"></i></a>
+                                    <a class="btn btn-info btn-sm" href="#" role="button"><i class="far fa-edit"></i></a>
+                                    <a class="btn btn-danger btn-sm" href="#" role="button"><i class="far fa-trash-alt"></i></a>
+                                </td>
                             </tr>
                         </tbody>
                     </table>
